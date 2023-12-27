@@ -1,0 +1,21 @@
+{
+  "name": "flat_munich",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "types": "module",
+  "type": "module",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "node-telegram-bot-api": "^0.64.0",
+    "puppeteer": "^21.6.1",
+    "tough-cookie": "^4.1.3",
+    "uuid": "^9.0.1"
+  }
+}
