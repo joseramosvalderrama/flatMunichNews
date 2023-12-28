@@ -9,7 +9,7 @@ export const sendFlatUpdate = async (flats) => {
   for (const element of flats) {
     await bot.sendMessage(
       CHAT_ID,
-      `${element.title}\n${element.price}€\n${element.link}`
+      `${element.title}\nES: ${element.title_es}\n${element.price}€\n${element.link}`
     );
   }
 };
