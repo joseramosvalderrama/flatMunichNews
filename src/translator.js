@@ -1,4 +1,5 @@
 import translate from "translate";
+import "dotenv/config";
 
 translate.engine = "deepl";
 translate.key = process.env.DEEPL_API_KEY;
