@@ -1,7 +1,7 @@
 import translate from "translate";
 
 translate.engine = "deepl";
-translate.key = "22cdcf0d-0175-db47-ba59-0d9bcf91e8b2:fx";
+translate.key = process.env.DEEPL_API_KEY;
 
 export const translateToEs = async (flats) => {
   const translateMap = {};

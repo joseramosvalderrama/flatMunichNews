@@ -1,6 +1,10 @@
 import mongoose from "mongoose";
+import "dotenv/config";
 
-const url = "mongodb://flatUser:flatMunich@localhost:27017/flatsDB";
+const DB_USER = process.env.FLATS_DB_USER;
+const DB_PASSWORD = process.env.FLATS_DB_PASSWORD;
+
+const url = `mongodb://${DB_USER}:${DB_PASSWORD}@localhost:27017/flatsDB`;
 
 await mongoose.connect(url);
 
