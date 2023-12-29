@@ -10,6 +10,7 @@ const scrapFlats = async () => {
   flats = await translateToEs(flats);
   console.log(flats);
   await sendFlatUpdate(flats);
+  console.log("Finished flats script");
   process.exit(0);
 };
 
